@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Eletrônicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Loja Eletrônicos</h1>
+        <div class="cart">
+            <button id="cartButton">Carrinho (0)</button>
+        </div>
+    </header>
+
+    <!-- Produtos -->
+    <main>
+        <section class="product-list">
+            <div class="product">
+                <img src="phone.jpg" alt="Smartphone">
+                <h2>Smartphone X</h2>
+                <p>Preço: R$ 1.500</p>
+                <button class="add-to-cart" data-product="Smartphone X" data-price="1500">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product">
+                <img src="laptop.jpg" alt="Notebook">
+                <h2>Notebook Y</h2>
+                <p>Preço: R$ 3.000</p>
+                <button class="add-to-cart" data-product="Notebook Y" data-price="3000">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product">
+                <img src="headphone.jpg" alt="Headphone">
+                <h2>Headphone Z</h2>
+                <p>Preço: R$ 500</p>
+                <button class="add-to-cart" data-product="Headphone Z" data-price="500">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <!-- Carrinho -->
+        <section class="cart-details" id="cartDetails" style="display: none;">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: R$ <span id="totalPrice">0</span></p>
+            <button id="checkoutButton">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Loja de Eletrônicos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
